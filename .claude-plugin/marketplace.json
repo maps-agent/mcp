@@ -1,0 +1,21 @@
+{
+  "name": "maps-agent",
+  "owner": {
+    "name": "Maps Agent",
+    "email": "hello@maps-agent.com"
+  },
+  "metadata": {
+    "description": "Maps Agent for AI agents: Google Maps and local SEO knowledge over MCP.",
+    "version": "1.0.0"
+  },
+  "plugins": [
+    {
+      "name": "maps-agent",
+      "source": "./plugins/maps-agent",
+      "description": "Google Business Profile and Google Maps know-how for AI agents: guides, answers, glossary and research, each answer linked to its page.",
+      "version": "1.0.0",
+      "category": "marketing",
+      "homepage": "https://maps-agent.com"
+    }
+  ]
+}

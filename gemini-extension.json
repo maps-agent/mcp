@@ -1,0 +1,11 @@
+{
+  "name": "maps-agent",
+  "version": "1.0.0",
+  "description": "Google Business Profile and Google Maps know-how for AI agents: guides, answers, glossary and research, each answer linked to its page.",
+  "mcpServers": {
+    "maps-agent": {
+      "httpUrl": "https://maps-agent.com/mcp"
+    }
+  },
+  "contextFileName": "GEMINI.md"
+}

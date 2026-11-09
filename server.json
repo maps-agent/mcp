@@ -1,0 +1,34 @@
+{
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+  "name": "com.maps-agent/knowledge",
+  "title": "Maps Agent",
+  "description": "Google Maps and Business Profile know-how for local businesses: answers, guides, research.",
+  "version": "1.0.0",
+  "websiteUrl": "https://maps-agent.com",
+  "icons": [
+    {
+      "src": "https://maps-agent.com/icon-512.png",
+      "mimeType": "image/png",
+      "sizes": [
+        "512x512"
+      ]
+    },
+    {
+      "src": "https://maps-agent.com/icon-192.png",
+      "mimeType": "image/png",
+      "sizes": [
+        "192x192"
+      ]
+    }
+  ],
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://maps-agent.com/mcp"
+    }
+  ],
+  "repository": {
+    "url": "https://github.com/maps-agent/mcp",
+    "source": "github"
+  }
+}

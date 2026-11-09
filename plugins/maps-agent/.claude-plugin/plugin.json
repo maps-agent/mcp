@@ -1,0 +1,22 @@
+{
+  "name": "maps-agent",
+  "version": "1.0.0",
+  "description": "Google Business Profile and Google Maps know-how for AI agents: guides, answers, glossary and research, each answer linked to its page. Connects the maps-agent.com MCP server and a skill on how to use it.",
+  "author": {
+    "name": "Maps Agent",
+    "email": "hello@maps-agent.com",
+    "url": "https://maps-agent.com"
+  },
+  "homepage": "https://maps-agent.com",
+  "repository": "https://github.com/maps-agent/mcp",
+  "license": "MIT",
+  "keywords": [
+    "google-business-profile",
+    "google-maps",
+    "local-seo",
+    "mcp"
+  ],
+  "icon": "./.claude-plugin/icon.png",
+  "termsOfServiceUrl": "https://maps-agent.com/terms",
+  "documentationUrl": "https://maps-agent.com/llms.txt"
+}
