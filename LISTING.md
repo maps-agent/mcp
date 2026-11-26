@@ -24,10 +24,16 @@
 
 **Description** Find guides, studies and definitions about Google Business Profile and local SEO. Use sources on reviews, categories and Google Maps rankings, and request a public profile audit where available.
 
-## Example prompts
+## 5 questions we answer
 
-- How do I get more Google reviews for my local business?
-- How should I choose my Google Business Profile primary category?
-- What does proximity mean in Google Maps rankings?
+- I see my shop when I sign in, but my neighbour can't find it. Where should I start?
+- What changed in Google Business Profile this month?
+- What does your research say about how many Google reviews a local business needs?
+- What do your plans cost today, and which ones can I start now?
+- I'd like an assistant to find your answers from my terminal. How do I set it up in Codex?
 
-## 5 вопросов отвечаем, 3 не отвечаем
+## 3 questions we don't answer
+
+- Will it rain in Austin tomorrow?
+- Can you recommend a vegetarian curry recipe?
+- What are the four largest moons of Jupiter?

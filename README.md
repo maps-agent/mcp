@@ -49,7 +49,7 @@ gemini extensions install https://github.com/maps-agent/mcp
 | Claude | [marketplace.json](.claude-plugin/marketplace.json) |
 | ChatGPT / Codex | [plugin.json](openai/maps-agent/plugin.json) · [marketplace.json](.agents/plugins/marketplace.json) |
 | Antigravity | [plugin.json](antigravity/maps-agent/plugin.json) |
-| Gemini CLI | [gemini-extension.json](gemini-extension.json) |
+| Gemini CLI | [gemini-extension.json](gemini-extension.json) · [Skills](skills/) |
 | Cursor | [plugin.json](.cursor-plugin/plugin.json) |
 | Kiro | [POWER.md](kiro/maps-agent/POWER.md) |
 | Kilo | [MCP.yaml](MCP.yaml) |
