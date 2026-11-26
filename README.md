@@ -5,8 +5,8 @@
 Find guides, studies and definitions about Google Business Profile and local SEO. Use sources on reviews, categories and Google Maps rankings, and request a public profile audit where available.
 
 - **MCP** `https://maps-agent.com/mcp` (Streamable HTTP). No sign-in or API key. Audit and feedback tools can submit data.
-- **MCP Registry** `com.maps-agent/knowledge` · `1.3.0`
-- **Skills** [`maps-agent`](skills/maps-agent/SKILL.md)
+- **MCP Registry** `com.maps-agent/knowledge` · `1.4.0`
+- **Skills** [`maps-agent`](skills/maps-agent/SKILL.md), [`profile-owner-week`](skills/profile-owner-week/SKILL.md), [`profile-self-audit`](skills/profile-self-audit/SKILL.md), [`profile-suspended`](skills/profile-suspended/SKILL.md)
 
 ## Tools
 
@@ -17,6 +17,8 @@ Find guides, studies and definitions about Google Business Profile and local SEO
 | `list_articles` | List published pages |
 | `define_term` | Define a local SEO term |
 | `get_research` | Read a study with its method |
+| `get_ranking_factors` | What moves a place in Google Maps and AI answers |
+| `get_checklist` | Get a checklist or template |
 | `find_categories` | Find Google Business Profile categories |
 | `get_changes` | What Google changed |
 | `get_plans` | Maps Agent plans and prices |

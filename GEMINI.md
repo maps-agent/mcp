@@ -11,6 +11,8 @@ Find guides, studies and definitions about Google Business Profile and local SEO
 | `list_articles` | List published pages |
 | `define_term` | Define a local SEO term |
 | `get_research` | Read a study with its method |
+| `get_ranking_factors` | What moves a place in Google Maps and AI answers |
+| `get_checklist` | Get a checklist or template |
 | `find_categories` | Find Google Business Profile categories |
 | `get_changes` | What Google changed |
 | `get_plans` | Maps Agent plans and prices |
