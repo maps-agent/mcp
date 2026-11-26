@@ -27,5 +27,9 @@
   "Replit": {
     "url": "https://replit.com/integrations?mcp=eyJkaXNwbGF5TmFtZSI6Ik1hcHMgQWdlbnQiLCJiYXNlVXJsIjoiaHR0cHM6Ly9tYXBzLWFnZW50LmNvbS9tY3AifQ%3D%3D",
     "source": "https://docs.replit.com/features/mcp/overview#share-your-own-install-link"
+  },
+  "LM Studio": {
+    "url": "lmstudio://add_mcp?name=maps-agent&config=eyJ1cmwiOiJodHRwczovL21hcHMtYWdlbnQuY29tL21jcCJ9",
+    "source": "https://lmstudio.ai/docs/app/mcp/deeplink"
   }
 }
