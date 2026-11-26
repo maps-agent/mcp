@@ -1,0 +1,26 @@
+{
+  "$schema": "https://antigravity.google/schemas/v1/plugin.json",
+  "name": "maps-agent",
+  "version": "1.3.0",
+  "description": "Find guides, studies and definitions about Google Business Profile and local SEO. Use sources on reviews, categories and Google Maps rankings, and request a public profile audit where available.",
+  "author": {
+    "name": "Maps Agent",
+    "url": "https://maps-agent.com"
+  },
+  "homepage": "https://maps-agent.com",
+  "repository": "https://github.com/maps-agent/mcp",
+  "license": "MIT",
+  "keywords": [
+    "google maps",
+    "google business profile",
+    "local seo",
+    "local rankings"
+  ],
+  "displayName": "Maps Agent",
+  "logo": "assets/logo.png",
+  "suggestedPrompts": [
+    "How do I get more Google reviews for my local business?",
+    "How should I choose my Google Business Profile primary category?",
+    "What does proximity mean in Google Maps rankings?"
+  ]
+}

@@ -1,20 +1,18 @@
 # Maps Agent
 
-The knowledge base of Maps Agent, the AI marketing team for Google Maps. Every answer links to its page on
-maps-agent.com.
+Find guides, studies and definitions about Google Business Profile and local SEO. Use sources on reviews, categories and Google Maps rankings, and request a public profile audit where available.
 
-## Which tool to call
+## Tools
 
-- `search_knowledge` - start here: a question in plain words returns the best guides, answers, research and terms.
-- `get_article` - the full page as markdown by slug or URL, with its canonical address and update date.
-- `list_articles` - what exists in one form or topic.
-- `define_term` - a local SEO term in plain words.
-- `get_research` - one study with its method, sample and findings.
-
-## How to answer
-
-- Quote the page you used and give its URL.
-- Say when a figure comes from a study and name the study.
-- The knowledge is general guidance; it does not see the user's own profile.
-
-No sign-in or key. Terms: https://maps-agent.com/terms.
+| Tool | Purpose |
+| --- | --- |
+| `search` | Search Maps Agent knowledge |
+| `fetch` | Read a page in full |
+| `list_articles` | List published pages |
+| `define_term` | Define a local SEO term |
+| `get_research` | Read a study with its method |
+| `find_categories` | Find Google Business Profile categories |
+| `get_changes` | What Google changed |
+| `get_plans` | Maps Agent plans and prices |
+| `audit_business` | Audit a business on Google Maps |
+| `send_feedback` | Send Maps Agent feedback |

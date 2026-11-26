@@ -1,8 +1,7 @@
-# Maps Agent plugin
+# Maps Agent
 
-Google Maps and local SEO knowledge inside Claude Code and Cursor: the MCP server `maps-agent` (`https://maps-agent.com/mcp`, read-only,
-no sign-in) and the `maps-agent` skill - which tool to call and how to quote the pages.
+Find guides, studies and definitions about Google Business Profile and local SEO. Use sources on reviews, categories and Google Maps rankings, and request a public profile audit where available.
 
-Install in Claude Code:
+MCP: `https://maps-agent.com/mcp`. Privacy: https://maps-agent.com/privacy.
 
-    /plugin install maps-agent --marketplace maps-agent/mcp
+Install in Claude Code: `claude plugin install maps-agent --marketplace maps-agent/mcp`.

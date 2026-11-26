@@ -3,7 +3,7 @@
   "name": "com.maps-agent/knowledge",
   "title": "Maps Agent",
   "description": "Google Maps and Business Profile know-how for local businesses: answers, guides, research.",
-  "version": "1.0.0",
+  "version": "1.3.0",
   "websiteUrl": "https://maps-agent.com",
   "icons": [
     {

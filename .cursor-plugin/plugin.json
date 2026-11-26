@@ -1,23 +1,23 @@
 {
   "name": "maps-agent",
-  "displayName": "Maps Agent",
-  "description": "Google Business Profile and Google Maps know-how for AI agents: guides, answers, glossary and research, each answer linked to its page.",
-  "version": "1.0.0",
+  "version": "1.3.0",
+  "description": "Find guides, studies and definitions about Google Business Profile and local SEO. Use sources on reviews, categories and Google Maps rankings, and request a public profile audit where available.",
   "author": {
     "name": "Maps Agent",
+    "email": "hello@maps-agent.com",
     "url": "https://maps-agent.com"
   },
   "homepage": "https://maps-agent.com",
   "repository": "https://github.com/maps-agent/mcp",
   "license": "MIT",
   "keywords": [
-    "google-business-profile",
-    "google-maps",
-    "local-seo",
-    "reviews",
-    "mcp"
+    "Google Maps",
+    "Google Business Profile",
+    "local SEO",
+    "local rankings"
   ],
+  "displayName": "Maps Agent",
   "logo": "assets/icon.png",
-  "skills": "./plugins/maps-agent/skills/",
+  "skills": "./skills/",
   "mcpServers": "./.mcp.json"
 }

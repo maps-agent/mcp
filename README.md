@@ -1,45 +1,72 @@
-# Maps Agent MCP server
+# Maps Agent MCP
 
-![Maps Agent MCP server - Google Maps marketing know-how in your AI agent](assets/cover.png)
+![Maps Agent MCP](assets/cover.png)
 
-Google Business Profile and Google Maps know-how for AI agents: guides, answers, a glossary and research on reviews,
-categories, photos, posts and local rankings. Each answer links to its page on maps-agent.com.
+Find guides, studies and definitions about Google Business Profile and local SEO. Use sources on reviews, categories and Google Maps rankings, and request a public profile audit where available.
 
-- **Server:** `https://maps-agent.com/mcp` - remote, Streamable HTTP, read-only, no sign-in, no key.
-- **MCP Registry name:** `com.maps-agent/knowledge`.
-
-This repository holds the connection files, the plugin and the skill. The server runs at maps-agent.com.
+- **MCP** `https://maps-agent.com/mcp` (Streamable HTTP). No sign-in or API key. Audit and feedback tools can submit data.
+- **MCP Registry** `com.maps-agent/knowledge` · `1.3.0`
+- **Skills** [`maps-agent`](skills/maps-agent/SKILL.md)
 
 ## Tools
 
-| Tool | What it does |
+| Tool | Purpose |
 | --- | --- |
-| `search_knowledge` | Search guides, answers, research and the glossary; filter by form. |
-| `get_article` | One page in full as markdown, with its canonical URL and update date. |
-| `list_articles` | What is published, by form and topic. |
-| `define_term` | A local SEO term in plain words. |
-| `get_research` | One study with its method, sample and findings. |
+| `search` | Search Maps Agent knowledge |
+| `fetch` | Read a page in full |
+| `list_articles` | List published pages |
+| `define_term` | Define a local SEO term |
+| `get_research` | Read a study with its method |
+| `find_categories` | Find Google Business Profile categories |
+| `get_changes` | What Google changed |
+| `get_plans` | Maps Agent plans and prices |
+| `audit_business` | Audit a business on Google Maps |
+| `send_feedback` | Send Maps Agent feedback |
 
-## Connect
+## One-click installation
 
-| Client | How |
+[Claude](https://claude.ai/customize/connectors?modal=add-custom-connector&connectorName=Maps%20Agent&connectorUrl=https%3A%2F%2Fmaps-agent.com%2Fmcp) · [Cursor](https://cursor.com/install-mcp?name=maps-agent&config=eyJ1cmwiOiJodHRwczovL21hcHMtYWdlbnQuY29tL21jcCJ9) · [VS Code](https://vscode.dev/redirect?url=vscode%3Amcp%2Finstall%3F%257B%2522name%2522%253A%2522maps-agent%2522%252C%2522type%2522%253A%2522http%2522%252C%2522url%2522%253A%2522https%253A%252F%252Fmaps-agent.com%252Fmcp%2522%257D) · [Kiro](https://kiro.dev/launch/mcp/add?name=maps-agent&config=%7B%22url%22%3A%22https%3A%2F%2Fmaps-agent.com%2Fmcp%22%7D) · [Goose](goose://extension?url=https%3A%2F%2Fmaps-agent.com%2Fmcp&type=streamable_http&timeout=300&id=maps-agent&name=Maps%20Agent&description=Find%20Google%20Business%20Profile%20guides%2C%20local%20SEO%20research%20and%20practical%20answers.) · [Qoder](qoder://aicoding.aicoding-deeplink/mcp/add?name=maps-agent&config=JTdCJTIydXJsJTIyJTNBJTIyaHR0cHMlM0ElMkYlMkZtYXBzLWFnZW50LmNvbSUyRm1jcCUyMiU3RA%3D%3D) · [Replit](https://replit.com/integrations?mcp=eyJkaXNwbGF5TmFtZSI6Ik1hcHMgQWdlbnQiLCJiYXNlVXJsIjoiaHR0cHM6Ly9tYXBzLWFnZW50LmNvbS9tY3AifQ%3D%3D)
+
+If GitHub hides the application links, paste the corresponding link into your browser:
+
+- Goose - `goose://extension?url=https%3A%2F%2Fmaps-agent.com%2Fmcp&type=streamable_http&timeout=300&id=maps-agent&name=Maps%20Agent&description=Find%20Google%20Business%20Profile%20guides%2C%20local%20SEO%20research%20and%20practical%20answers.`
+- Qoder - `qoder://aicoding.aicoding-deeplink/mcp/add?name=maps-agent&config=JTdCJTIydXJsJTIyJTNBJTIyaHR0cHMlM0ElMkYlMkZtYXBzLWFnZW50LmNvbSUyRm1jcCUyMiU3RA%3D%3D`
+
+[Install link data](install-links.json)
+
+```sh
+claude mcp add --transport http maps-agent https://maps-agent.com/mcp
+claude plugin install maps-agent --marketplace maps-agent/mcp
+codex mcp add maps-agent --url https://maps-agent.com/mcp
+agy plugin install https://github.com/maps-agent/mcp/tree/main/antigravity/maps-agent
+gemini extensions install https://github.com/maps-agent/mcp
+```
+
+## Package formats
+
+| Client | File |
 | --- | --- |
-| Claude, Claude Desktop | Settings - Connectors - Add custom connector - `https://maps-agent.com/mcp` |
-| Claude Code | `claude mcp add --transport http maps-agent https://maps-agent.com/mcp` |
-| Claude Code, plugin | `/plugin install maps-agent --marketplace maps-agent/mcp` |
-| ChatGPT | Settings - Apps - developer mode - Create - URL `https://maps-agent.com/mcp`, no authentication |
-| Cursor | [`.mcp.json`](.mcp.json) in your project or `~/.cursor/mcp.json` |
-| VS Code | `code --add-mcp '{"name":"maps-agent","type":"http","url":"https://maps-agent.com/mcp"}'` |
-| Codex | `codex mcp add maps-agent --url https://maps-agent.com/mcp` |
-| Gemini CLI | `gemini extensions install https://github.com/maps-agent/mcp` |
+| Claude | [marketplace.json](.claude-plugin/marketplace.json) |
+| ChatGPT / Codex | [plugin.json](openai/maps-agent/plugin.json) · [marketplace.json](.agents/plugins/marketplace.json) |
+| Antigravity | [plugin.json](antigravity/maps-agent/plugin.json) |
+| Gemini CLI | [gemini-extension.json](gemini-extension.json) |
+| Cursor | [plugin.json](.cursor-plugin/plugin.json) |
+| Kiro | [POWER.md](kiro/maps-agent/POWER.md) |
+| Kilo | [MCP.yaml](MCP.yaml) |
+| Cline | [entry.json](entry.json) |
+| Devin | [plugin.json](devin/maps-agent/.devin-plugin/plugin.json) |
+| Agent Plugins | [plugin.json](plugin.json) |
+| MCP Registry | [server.json](server.json) |
 
 ## Example questions
 
 - How do I get more Google reviews for my local business?
-- What is a Google Business Profile primary category and how should I choose it?
-- What does "proximity" mean in Google Maps rankings?
+- How should I choose my Google Business Profile primary category?
+- What does proximity mean in Google Maps rankings?
 
-## Terms
+## Terms and privacy
 
-Terms: https://maps-agent.com/terms. Privacy: https://maps-agent.com/privacy. Contact: hello@maps-agent.com.
-The files in this repository are MIT-licensed; the content the service returns is not covered by that licence.
+- [Terms](https://maps-agent.com/terms)
+- [Privacy](https://maps-agent.com/privacy)
+- Support: hello@maps-agent.com
+- [MIT](LICENSE) · [Changelog](CHANGELOG.md)
