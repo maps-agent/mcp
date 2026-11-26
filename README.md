@@ -53,7 +53,7 @@ gemini extensions install https://github.com/maps-agent/mcp
 | Cursor | [plugin.json](.cursor-plugin/plugin.json) |
 | Kiro | [POWER.md](kiro/maps-agent/POWER.md) |
 | Kilo | [MCP.yaml](MCP.yaml) |
-| Cline | [entry.json](entry.json) |
+| Cline | [entry.json](entry.json) · [llms-install.md](llms-install.md) |
 | Devin | [plugin.json](devin/maps-agent/.devin-plugin/plugin.json) |
 | Agent Plugins | [plugin.json](plugin.json) |
 | MCP Registry | [server.json](server.json) |
